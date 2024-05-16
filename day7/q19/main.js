@@ -1,0 +1,17 @@
+var guestName = ["Uncle Zafar", "miss Rana", "Sonia"];
+//show array
+guestName.forEach(function (guestName) {
+    console.log("Dear \"".concat(guestName, "\" would you like to join me for dinner at my place? "));
+});
+console.log("\nI am inviting more guest ,so here is our new list of guests ");
+//adding more guests
+guestName.unshift("Zarwa");
+// let add = 2;
+// let newguest = "Sham"
+guestName.splice(2, 0, "Sham");
+guestName.push("Amar");
+guestName.forEach(function (guestName) {
+    console.log("Dear \"".concat(guestName, "\" would you like to join me for dinner at my place? "));
+});
+var totalGuest = guestName.length;
+console.log("Total guests in my list are ".concat(totalGuest));
